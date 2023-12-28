@@ -1,0 +1,59 @@
+{
+  "name": "tnfy",
+  "version": "0.0.0",
+  "description": "A tinify cli tool for compressing images in bulk.",
+  "author": "M1heng <m1heng@me.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/m1heng/tnfy#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m1heng/tnfy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/m1heng/tnfy/issues"
+  },
+  "keywords": ["tinify", "tinypng", "compress", "image"],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "tnfy": "./bin/tnfy.js"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "tsx src/cli.ts",
+    "lint": "eslint --ext .js,.ts .",
+    "stub": "unbuild --stub"
+  },
+  "dependencies": {
+    "axios": "^1.6.3",
+    "cli-progress": "^3.12.0",
+    "consola": "^3.2.3",
+    "find-up": "^7.0.0",
+    "p-limit": "^4.0.0",
+    "unconfig": "^0.3.11",
+    "yargs": "^17.3.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.1",
+    "@types/cli-progress": "^3.11.5",
+    "@types/node": "^20.10.5",
+    "@types/yargs": "^17.0.8",
+    "eslint": "^8.56.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "unbuild": "^2.0.0"
+  }
+}
