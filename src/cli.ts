@@ -26,7 +26,7 @@ cli.command('*', 'Compresses a directory', yargs =>
       alias: 'p',
       type: 'string',
       description: 'Path to directory',
-    }).demandOption(['apikey', 'path'], 'Please'), async (argv) => {
+    }).demandOption(['apikey', 'path'], 'API key and path is required'), async (argv) => {
   await run({
     ...argv,
   })

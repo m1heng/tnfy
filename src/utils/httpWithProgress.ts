@@ -12,7 +12,6 @@ export async function downloadFileWithProgress(url: string, outputFilename: stri
       url,
       onDownloadProgress: onProgress,
       responseType: 'arraybuffer',
-
     })
     await writeFile(outputFilename, response.data)
   }
