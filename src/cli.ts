@@ -1,8 +1,9 @@
-import { scriptName } from 'yargs'
+import process from 'node:process'
+import y from 'yargs/yargs'
 import { version } from '../package.json'
 import { run } from './run'
 
-const cli = scriptName('tnfy')
+const cli = y(process.argv.slice(2)).scriptName('tnfy')
   .usage('$0 [args]')
   .version(version)
   .strict()

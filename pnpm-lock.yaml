@@ -24,7 +24,7 @@ dependencies:
     specifier: ^0.3.11
     version: 0.3.11
   yargs:
-    specifier: ^17.3.1
+    specifier: ^17.7.2
     version: 17.7.2
 
 devDependencies:
@@ -38,7 +38,7 @@ devDependencies:
     specifier: ^20.10.5
     version: 20.10.5
   '@types/yargs':
-    specifier: ^17.0.8
+    specifier: ^17.0.32
     version: 17.0.32
   eslint:
     specifier: ^8.56.0
