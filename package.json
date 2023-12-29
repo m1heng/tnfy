@@ -2,6 +2,7 @@
   "name": "tnfy",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@8.12.1",
   "description": "A tinify cli tool for compressing images in bulk.",
   "author": "M1heng <m1heng@me.com>",
   "license": "MIT",
